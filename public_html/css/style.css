@@ -1,0 +1,724 @@
+body {
+  color: "yellow"; }
+
+body {
+  color: black; }
+
+header {
+  background-color: white; }
+
+.group-logo {
+  background-color: white; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: white; }
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: white; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white; }
+
+.dropdown-menu {
+  background-color: #d0021b; }
+
+.dropdown-item {
+  color: white; }
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #ab0715; }
+
+.bg-red {
+  background-color: #e60012; }
+
+section#dealer {
+  background-color: white; }
+
+section#welcome {
+  color: white;
+  background-image: url("../images/sumatera-berlian-motors.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem; }
+
+.darkenBgImg {
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.parallax-window {
+  min-height: 400px;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* Button */
+.btn-mitsubishi {
+  color: white;
+  background-color: #9f0619;
+  border-color: #9f0619; }
+
+a.btn-mitsubishi:hover,
+a.btn-mitsubishi:focus {
+  color: white; }
+
+#mitsubishi {
+  background-color: #FAFAF8; }
+
+#mitsubishi h2,
+#mitsubishi h3 {
+  color: #9f0619; }
+
+#mitsubishi p {
+  color: #3A3935; }
+
+#mitsubishi .card {
+  background: transparent; }
+
+#service {
+  color: white; }
+
+#service img {
+  display: block;
+  max-width: 300px; }
+
+#service .swiper-wrapper:hover {
+  cursor: e-resize; }
+
+.underline {
+  text-decoration: none;
+  position: relative; }
+
+.underline:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+  bottom: -2px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%; }
+
+#mitsubishi span.underline:after {
+  background-color: #9f0619; }
+
+#service span.underline:after {
+  background-color: white; }
+
+#network span.underline:after {
+  background-color: white; }
+
+#network {
+  background-color: #9f0619; }
+
+#network h2 {
+  color: white; }
+
+#beritaevents {
+  background-color: #000000; }
+
+#beritaevents .btn-primary {
+  background-color: #9f0619;
+  border-color: #9f0619; }
+
+#beritaevents .page-link {
+  color: #9f0619; }
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .welcome-text p {
+    display: none; } }
+
+/* Medium devices (tablets, 768px and up) */
+/* Small devices (landscape phones, 576px and up) */
+.welcome-text {
+  text-align: center;
+  text-shadow: 1px 0px #999; }
+
+/* Extra large devices (large desktops, 1200px and up) */
+#trademark .card {
+  border: none; }
+
+.nav-addstyle {
+  background-color: #da251c;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 20px;
+  margin-bottom: 0; }
+
+.nav-addstyle ul li a {
+  color: white !important; }
+
+#map_wrapper {
+  height: 600px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%); }
+
+#map_canvas {
+  width: 100%;
+  height: 100%; }
+
+#aboutus {
+  background-color: #353535;
+  color: #999; }
+
+#aboutus h4 {
+  color: #e60012; }
+
+#aboutus a, aboutus a:visited, aboutus a:target {
+  color: #999; }
+
+section#aboutus ul li {
+  margin-bottom: 5px; }
+
+.medsos svg, #aboutus svg {
+  vertical-align: middle; }
+
+footer#main {
+  background-color: #282828;
+  color: #999; }
+
+footer#main a {
+  color: #999; }
+
+@media (min-width: 992px) {
+  footer .row div:first-of-type {
+    text-align: left; }
+  footer .row div:last-of-type {
+    text-align: right; } }
+
+@media (max-width: 992px) {
+  footer .row div:first-of-type {
+    /*        margin-bottom: 40px;*/
+    text-align: center; }
+  footer .row div:last-of-type {
+    text-align: center;
+    /*        margin-bottom: 0;*/ } }
+
+@media (max-width: 576px) {
+  footer section:last-of-type .container .row div {
+    text-align: center; } }
+
+/* halaman dealer */
+section#dealer {
+  color: white;
+  background-image: url("../images/motors/title-head-page/bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 15rem; }
+
+section#branch .card-title {
+  color: #e60012; }
+
+section#branch address {
+  font-size: .9rem; }
+
+section#branch address svg {
+  width: .9rem; }
+
+section#branch address span a {
+  color: inherit; }
+
+section#about-dealer img {
+  max-height: 200px;
+  height: 100%; }
+
+/* PAGE About Us */
+#company-profile .bg-text {
+  background: #f1f1f1; }
+
+/* Contact Us*/
+#contact-us .btn-primary {
+  background-color: #e60012;
+  border: #e60012; }
+
+#contact-us input.form-control,
+#contact-us textarea.form-control {
+  background-color: #f1f1f1; }
+
+footer {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%); }
+
+footer a,
+footer a:hover,
+footer a:active {
+  color: #6D6D6D; }
+
+footer section {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+footer section:first-of-type {
+  background-color: #1C1C1C;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+footer section:last-of-type {
+  background-color: #282828;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+footer ul {
+  margin: 0;
+  padding: 0; }
+
+.flist {
+  list-style: none; }
+
+#fcars li {
+  float: left;
+  width: 50%; }
+
+@media (min-width: 992px) {
+  footer .row div:first-of-type {
+    text-align: left; }
+  footer .row div:last-of-type {
+    text-align: right; } }
+
+@media (max-width: 992px) {
+  footer .row div:first-of-type {
+    /*        margin-bottom: 40px;*/
+    text-align: center; }
+  footer .row div:last-of-type {
+    text-align: center;
+    /*        margin-bottom: 0;*/ } }
+
+@media (max-width: 576px) {
+  footer section:last-of-type .container .row div {
+    text-align: center; } }
+
+#aboutus {
+  background-color: #353535;
+  color: #999; }
+
+#aboutus h4 {
+  color: #e60012; }
+
+#aboutus a, aboutus a:visited, aboutus a:target {
+  color: #999; }
+
+section#aboutus ul li {
+  margin-bottom: 5px; }
+
+.medsos svg, #aboutus svg {
+  vertical-align: middle; }
+
+footer#main {
+  background-color: #282828;
+  color: #999; }
+
+footer#main a {
+  color: #999; }
+
+.featurette-divider {
+  margin: 1rem 0;
+  /* Space out the Bootstrap <hr> more */ }
+
+ul.footer-dealer-list li {
+  font-size: .9rem; }
+
+#mitsubishi .card {
+  border: none; }
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: white;
+  background-color: #e60012;
+  border-color: rgba(230, 0, 18, 0.6) rgba(230, 0, 18, 0.6) rgba(230, 0, 18, 0.6); }
+
+.nav-tabs {
+  border-bottom: 1px solid rgba(230, 0, 18, 0.6); }
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border-color: rgba(230, 0, 18, 0.6) rgba(230, 0, 18, 0.6) rgba(230, 0, 18, 0.6); }
+
+.nav-tabs a {
+  color: rgba(230, 0, 18, 0.6); }
+
+#company-profile #accordion .card {
+  border: none;
+  margin-bottom: 5px; }
+
+#company-profile #accordion .card .btn-link {
+  color: white;
+  font-weight: bold; }
+
+#company-profile .card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #e60012;
+  border-bottom: 1px solid rgba(122, 0, 10, 0.8); }
+
+#company-profile .card-body {
+  background-color: #353535;
+  color: white; }
+
+#company-profile address {
+  font-size: 0.8rem; }
+
+#company-profile address svg {
+  width: 0.8rem; }
+
+#company-profile .card-body ul li {
+  margin-bottom: 5px; }
+
+#company-profile .card-body a,
+#company-profile .card-body a:focus,
+#company-profile .card-body a:hover {
+  color: white; }
+
+/* from motors.css  */
+html {
+  font-size: 1rem; }
+
+.navbar.motors {
+  background-color: #e60012; }
+
+.navbar.motors .navbar-brand {
+  color: #ecf0f1; }
+
+.navbar.motors .navbar-brand:hover,
+.navbar.motors .navbar-brand:focus {
+  color: #ecdbff; }
+
+.navbar.motors .navbar-text {
+  color: #ecf0f1; }
+
+.navbar.motors .navbar-nav .nav-link {
+  color: #ecf0f1;
+  border-radius: .25rem;
+  margin: 0 0.25em; }
+
+.navbar.motors .navbar-nav .nav-link:not(.disabled):hover,
+.navbar.motors .navbar-nav .nav-link:not(.disabled):focus {
+  color: #ecdbff; }
+
+.navbar.motors .navbar-nav .dropdown-menu {
+  background-color: #e60012;
+  border-color: #bd0010; }
+
+.navbar.motors .navbar-nav .dropdown-menu .dropdown-item {
+  color: #ecf0f1; }
+
+.navbar.motors .navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar.motors .navbar-nav .dropdown-menu .dropdown-item:focus,
+.navbar.motors .navbar-nav .dropdown-menu .dropdown-item.active {
+  color: #ecdbff;
+  background-color: #bd0010; }
+
+.navbar.motors .navbar-nav .dropdown-menu .dropdown-divider {
+  background-color: #bd0010; }
+
+.navbar.motors .navbar-nav .nav-item.active .nav-link,
+.navbar.motors .navbar-nav .nav-item.active .nav-link:hover,
+.navbar.motors .navbar-nav .nav-item.active .nav-link:focus,
+.navbar.motors .navbar-nav .nav-item.show .nav-link,
+.navbar.motors .navbar-nav .nav-item.show .nav-link:hover,
+.navbar.motors .navbar-nav .nav-item.show .nav-link:focus {
+  color: #ecdbff;
+  background-color: #bd0010; }
+
+.navbar.motors .navbar-toggle {
+  border-color: #bd0010; }
+
+.navbar.motors .navbar-toggle:hover,
+.navbar.motors .navbar-toggle:focus {
+  background-color: #bd0010; }
+
+.navbar.motors .navbar-toggle .navbar-toggler-icon {
+  color: #ecf0f1; }
+
+.navbar.motors .navbar-collapse,
+.navbar.motors .navbar-form {
+  border-color: #ecf0f1; }
+
+.navbar.motors .navbar-link {
+  color: #ecf0f1; }
+
+.navbar.motors .navbar-link:hover {
+  color: #ecdbff; }
+
+@media (max-width: 767px) {
+  .navbar.motors .navbar-nav .open .dropdown-menu .dropdown-item {
+    color: #ecf0f1; }
+  .navbar.motors .navbar-nav .open .dropdown-menu .dropdown-item:hover,
+  .navbar.motors .navbar-nav .open .dropdown-menu .dropdown-item:focus {
+    color: #ecdbff; }
+  .navbar.motors .navbar-nav .open .dropdown-menu .dropdown-item.active {
+    color: #ecdbff;
+    background-color: #bd0010; } }
+
+#motors-header nav {
+  background-color: #D0021B;
+  border-bottom: 1px solid #9c0315; }
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
+nav#topbar,
+nav#topbar .dropdown-menu {
+  background-color: #9F0619;
+  font-size: .7em;
+  color: white; }
+
+nav#topbar .dropdown-menu {
+  font-size: 1em; }
+
+nav#topbar .dropdown-menu a:active,
+nav#topbar .dropdown-menu a:hover,
+nav#topbar .dropdown-menu a:focus {
+  background-color: #772723; }
+
+nav a,
+nav a:hover,
+nav a:focus {
+  color: white; }
+
+section#ourcar,
+section#highlight {
+  color: white;
+  background-color: #11141B; }
+
+.informasi-produk {
+  background-color: #D0021B;
+  color: white; }
+
+.informasi-produk h3.judul-informasi-produk {
+  font-size: 1rem; }
+
+.informasi-produk p.deskripsi-informasi-produk {
+  font-size: .8rem; }
+
+section#beritaevents h2 {
+  color: #D0021B; }
+
+.fullwidth {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%); }
+
+/* SWIPER */
+.s-opsi-warna .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2); }
+
+.s-opsi-warna .swiper-pagination-bullet-active {
+  width: 30px;
+  height: 30px; }
+
+.s-opsi-warna .swiper-pagination-bullets {
+  bottom: 5rem; }
+
+.s-opsi-warna img {
+  width: 100%;
+  max-width: 850px; }
+
+.s-opsi-warna figcaption {
+  font-size: 1.2rem;
+  color: black;
+  bottom: 6.5rem; }
+
+.mirageColor-0 {
+  background-color: #850d24 !important;
+  color: #850d24 !important; }
+
+.mirageColor-1 {
+  background-color: #1B1B1D !important;
+  color: #1B1B1D !important; }
+
+.mirageColor-2 {
+  background-color: #b1111a !important;
+  color: #b1111a !important; }
+
+.mirageColor-3 {
+  background-color: #f3f3f6 !important;
+  color: #f3f3f6 !important; }
+
+.mirageColor-4 {
+  background-color: #3c3638 !important;
+  color: #3c3638 !important; }
+
+.s-produk {
+  position: relative; }
+
+.s-produk .overlays {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(208, 2, 27, 0.6);
+  width: 100%;
+  text-align: center; }
+
+.s-fitur-produk {
+  position: relative; }
+
+.s-fitur-produk .fitur-produk-overlay {
+  display: none;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: absolute;
+  top: 0;
+  background: rgba(208, 2, 27, 0.8); }
+
+.text-fitur-produk-overlay {
+  position: relative;
+  width: 80%;
+  top: 45px;
+  left: 34px; }
+
+.text-fitur-produk-overlay svg.feather.feather-search {
+  cursor: pointer; }
+
+.s-gallery-produk .swiper-button-next,
+.s-gallery-produk .swiper-button-prev {
+  width: 6.25rem;
+  height: 4.375rem;
+  background-color: #D0021B;
+  color: white;
+  background-image: none; }
+
+.s-gallery-produk .swiper-button-next svg,
+.s-gallery-produk .swiper-button-prev svg {
+  width: 6.25rem;
+  height: 4.375rem; }
+
+#beritaevents .btn-primary {
+  background-color: #D0021B;
+  border-color: #D0021B; }
+
+#beritaevents .page-link {
+  color: #5a5a5a; }
+
+/* about us and footer */
+#aboutus {
+  font-size: .9rem; }
+
+footer {
+  font-size: .8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%); }
+
+footer a,
+footer a:hover,
+footer a:active {
+  color: #6D6D6D; }
+
+footer section {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+footer section:first-of-type {
+  background-color: #1C1C1C;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+footer section:last-of-type {
+  background-color: #282828;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+footer ul {
+  margin: 0;
+  padding: 0; }
+
+.flist {
+  list-style: none; }
+
+#fcars li {
+  float: left;
+  width: 50%; }
+
+@media (min-width: 992px) {
+  footer .row div:first-of-type {
+    text-align: left; }
+  footer .row div:last-of-type {
+    text-align: right; } }
+
+@media (max-width: 992px) {
+  footer .row div:first-of-type {
+    /*        margin-bottom: 40px;*/
+    text-align: center; }
+  footer .row div:last-of-type {
+    text-align: center;
+    /*        margin-bottom: 0;*/ } }
+
+@media (max-width: 576px) {
+  footer section:last-of-type .container .row div {
+    text-align: center; } }
+
+#aboutus {
+  background-color: #353535;
+  color: #999; }
+
+#aboutus h4 {
+  color: #e60012; }
+
+#aboutus a, aboutus a:visited, aboutus a:target {
+  color: #999; }
+
+section#aboutus ul li {
+  margin-bottom: 5px; }
+
+.medsos svg, #aboutus svg {
+  vertical-align: middle; }
+
+footer#main {
+  background-color: #282828;
+  color: #999; }
+
+footer#main a {
+  color: #999; }
+
+ul.footer-dealer-list li {
+  font-size: .9rem; }
+
+#spec .card h5 a {
+  color: #D0021B; }
+
+@media (min-width: 768px) {
+  .col-md-5 {
+    padding-top: .5rem; } }
+
+/*
+FUSO COLOR SCHEME
+#E8CB4C
+#7D787E
+#DCC08E
+#31322D
+#CDB02E
+*/
+/* Article */
+.headtitle {
+  background-image: url("../images/motors/title-head-page/bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  color: white; }
+
+#artikel-terkait {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #F5F5F5; }
+
+#artikel-terkait h2 {
+  color: #D0021B; }
+
+#artikel-terkait a.btn {
+  background-color: #D0021B;
+  border: 1px solid #D0021B; }

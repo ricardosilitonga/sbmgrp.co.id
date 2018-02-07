@@ -1,0 +1,24 @@
+{
+  "name": "sbmgrp.co.id",
+  "description": "Project web design for SBMGroup",
+  "main": "index.js",
+  "authors": [
+    "Ricardo Silitonga"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "parallax.js": "^1.5.0",
+    "swiper": "^4.1.0",
+    "font-awesome": "^5.0.6"
+  }
+}
