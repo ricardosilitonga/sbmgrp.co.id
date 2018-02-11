@@ -1,9 +1,19 @@
-jQuery(function($) {
+$(document).ready(function() {
+  // if ($('#map_canvas').length) {
+  //   console.log("Maps");
+  // } else {
+  //   console.log("No Maps");
+  // }
+
+  if ($('#map_canvas').length) {
     // Asynchronously Load the map API
     var script = document.createElement('script');
     script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAF33SEqBrJJSqCSKSSERAUpswzMC665SE&sensor=false&callback=initialize";
     document.body.appendChild(script);
+  }
 });
+    
+
 
 function initialize() {
     var map;

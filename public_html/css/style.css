@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   color: "yellow"; }
 
@@ -33,11 +34,11 @@ header {
   text-decoration: none;
   background-color: #ab0715; }
 
+.darkenBgImg {
+  background-color: rgba(0, 0, 0, 0.9); }
+
 .bg-red {
   background-color: #e60012; }
-
-section#dealer {
-  background-color: white; }
 
 section#welcome {
   color: white;
@@ -46,12 +47,8 @@ section#welcome {
   background-size: cover;
   height: 30rem; }
 
-.darkenBgImg {
-  background-color: rgba(0, 0, 0, 0.9); }
-
-.parallax-window {
-  min-height: 400px;
-  background-color: rgba(0, 0, 0, 0.8); }
+section#dealer {
+  background-color: white; }
 
 /* Button */
 .btn-mitsubishi {
@@ -74,7 +71,12 @@ a.btn-mitsubishi:focus {
   color: #3A3935; }
 
 #mitsubishi .card {
-  background: transparent; }
+  background: transparent;
+  border: none; }
+
+.parallax-window {
+  min-height: 600px;
+  background-color: rgba(0, 0, 0, 0.8); }
 
 #service {
   color: white; }
@@ -101,7 +103,8 @@ a.btn-mitsubishi:focus {
   right: 0;
   width: 100%; }
 
-#mitsubishi span.underline:after {
+#mitsubishi span.underline:after,
+#beritaevents span.underline:after {
   background-color: #9f0619; }
 
 #service span.underline:after {
@@ -116,41 +119,6 @@ a.btn-mitsubishi:focus {
 #network h2 {
   color: white; }
 
-#beritaevents {
-  background-color: #000000; }
-
-#beritaevents .btn-primary {
-  background-color: #9f0619;
-  border-color: #9f0619; }
-
-#beritaevents .page-link {
-  color: #9f0619; }
-
-/* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-  .welcome-text p {
-    display: none; } }
-
-/* Medium devices (tablets, 768px and up) */
-/* Small devices (landscape phones, 576px and up) */
-.welcome-text {
-  text-align: center;
-  text-shadow: 1px 0px #999; }
-
-/* Extra large devices (large desktops, 1200px and up) */
-#trademark .card {
-  border: none; }
-
-.nav-addstyle {
-  background-color: #da251c;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-top: 20px;
-  margin-bottom: 0; }
-
-.nav-addstyle ul li a {
-  color: white !important; }
-
 #map_wrapper {
   height: 600px;
   width: 100vw;
@@ -160,46 +128,73 @@ a.btn-mitsubishi:focus {
   width: 100%;
   height: 100%; }
 
-#aboutus {
-  background-color: #353535;
-  color: #999; }
+#beritaevents {
+  background-color: #FFFFFF; }
 
-#aboutus h4 {
-  color: #e60012; }
+#beritaevents .btn-primary,
+#highlight .btn-primary {
+  background-color: #D0021B;
+  border-color: #D0021B; }
 
-#aboutus a, aboutus a:visited, aboutus a:target {
-  color: #999; }
+#beritaevents .page-link {
+  color: #5a5a5a; }
 
-section#aboutus ul li {
+footer {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  font-size: .9rem; }
+
+footer section#aboutus h4 {
+  font-size: .95rem;
+  color: white; }
+
+footer section#aboutus h5 {
+  font-size: .93rem; }
+
+footer section#aboutus a,
+aboutus a:hover, aboutus a:focus {
+  color: inherit; }
+
+section#aboutus ul {
+  padding: .8em; }
+
+footer section#aboutus ul li {
+  list-style-type: none;
   margin-bottom: 5px; }
+
+footer section#aboutus ul li a,
+footer section#aboutus ul li a:hover,
+footer section#aboutus ul li a:focus {
+  color: white; }
+
+.footer-dealer-list li {
+  margin-bottom: 15px; }
+
+.footer-dealer-list li img {
+  vertical-align: middle; }
+
+footer ul.medsos {
+  margin: 0;
+  padding: 0 !important; }
 
 .medsos svg, #aboutus svg {
   vertical-align: middle; }
 
-footer#main {
-  background-color: #282828;
-  color: #999; }
+footer ul.footer-dealer-list li {
+  background: url("../images/logo/mitsubishi-small-icon.png") no-repeat left top;
+  background-size: 20px auto;
+  padding: 0px 0px 3px 23px; }
 
-footer#main a {
-  color: #999; }
+.copyright {
+  display: flex;
+  flex-direction: row; }
 
-@media (min-width: 992px) {
-  footer .row div:first-of-type {
-    text-align: left; }
-  footer .row div:last-of-type {
-    text-align: right; } }
-
-@media (max-width: 992px) {
-  footer .row div:first-of-type {
-    /*        margin-bottom: 40px;*/
-    text-align: center; }
-  footer .row div:last-of-type {
-    text-align: center;
-    /*        margin-bottom: 0;*/ } }
-
-@media (max-width: 576px) {
-  footer section:last-of-type .container .row div {
-    text-align: center; } }
+.copyright div:first-of-type {
+  margin-right: auto !important; }
 
 /* halaman dealer */
 section#dealer {
@@ -238,109 +233,7 @@ section#about-dealer img {
 #contact-us textarea.form-control {
   background-color: #f1f1f1; }
 
-footer {
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: black;
-  color: white;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%); }
-
-footer a,
-footer a:hover,
-footer a:active {
-  color: #6D6D6D; }
-
-footer section {
-  margin-top: 0;
-  margin-bottom: 0; }
-
-footer section:first-of-type {
-  background-color: #1C1C1C;
-  padding-top: 60px;
-  padding-bottom: 60px; }
-
-footer section:last-of-type {
-  background-color: #282828;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-
-footer ul {
-  margin: 0;
-  padding: 0; }
-
-.flist {
-  list-style: none; }
-
-#fcars li {
-  float: left;
-  width: 50%; }
-
-@media (min-width: 992px) {
-  footer .row div:first-of-type {
-    text-align: left; }
-  footer .row div:last-of-type {
-    text-align: right; } }
-
-@media (max-width: 992px) {
-  footer .row div:first-of-type {
-    /*        margin-bottom: 40px;*/
-    text-align: center; }
-  footer .row div:last-of-type {
-    text-align: center;
-    /*        margin-bottom: 0;*/ } }
-
-@media (max-width: 576px) {
-  footer section:last-of-type .container .row div {
-    text-align: center; } }
-
-#aboutus {
-  background-color: #353535;
-  color: #999; }
-
-#aboutus h4 {
-  color: #e60012; }
-
-#aboutus a, aboutus a:visited, aboutus a:target {
-  color: #999; }
-
-section#aboutus ul li {
-  margin-bottom: 5px; }
-
-.medsos svg, #aboutus svg {
-  vertical-align: middle; }
-
-footer#main {
-  background-color: #282828;
-  color: #999; }
-
-footer#main a {
-  color: #999; }
-
-.featurette-divider {
-  margin: 1rem 0;
-  /* Space out the Bootstrap <hr> more */ }
-
-ul.footer-dealer-list li {
-  font-size: .9rem; }
-
-#mitsubishi .card {
-  border: none; }
-
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-  color: white;
-  background-color: #e60012;
-  border-color: rgba(230, 0, 18, 0.6) rgba(230, 0, 18, 0.6) rgba(230, 0, 18, 0.6); }
-
-.nav-tabs {
-  border-bottom: 1px solid rgba(230, 0, 18, 0.6); }
-
-.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-  border-color: rgba(230, 0, 18, 0.6) rgba(230, 0, 18, 0.6) rgba(230, 0, 18, 0.6); }
-
-.nav-tabs a {
-  color: rgba(230, 0, 18, 0.6); }
-
+/* Halaman Company Profile */
 #company-profile #accordion .card {
   border: none;
   margin-bottom: 5px; }
@@ -373,117 +266,14 @@ ul.footer-dealer-list li {
 #company-profile .card-body a:hover {
   color: white; }
 
-/* from motors.css  */
-html {
-  font-size: 1rem; }
-
-.navbar.motors {
-  background-color: #e60012; }
-
-.navbar.motors .navbar-brand {
-  color: #ecf0f1; }
-
-.navbar.motors .navbar-brand:hover,
-.navbar.motors .navbar-brand:focus {
-  color: #ecdbff; }
-
-.navbar.motors .navbar-text {
-  color: #ecf0f1; }
-
-.navbar.motors .navbar-nav .nav-link {
-  color: #ecf0f1;
-  border-radius: .25rem;
-  margin: 0 0.25em; }
-
-.navbar.motors .navbar-nav .nav-link:not(.disabled):hover,
-.navbar.motors .navbar-nav .nav-link:not(.disabled):focus {
-  color: #ecdbff; }
-
-.navbar.motors .navbar-nav .dropdown-menu {
-  background-color: #e60012;
-  border-color: #bd0010; }
-
-.navbar.motors .navbar-nav .dropdown-menu .dropdown-item {
-  color: #ecf0f1; }
-
-.navbar.motors .navbar-nav .dropdown-menu .dropdown-item:hover,
-.navbar.motors .navbar-nav .dropdown-menu .dropdown-item:focus,
-.navbar.motors .navbar-nav .dropdown-menu .dropdown-item.active {
-  color: #ecdbff;
-  background-color: #bd0010; }
-
-.navbar.motors .navbar-nav .dropdown-menu .dropdown-divider {
-  background-color: #bd0010; }
-
-.navbar.motors .navbar-nav .nav-item.active .nav-link,
-.navbar.motors .navbar-nav .nav-item.active .nav-link:hover,
-.navbar.motors .navbar-nav .nav-item.active .nav-link:focus,
-.navbar.motors .navbar-nav .nav-item.show .nav-link,
-.navbar.motors .navbar-nav .nav-item.show .nav-link:hover,
-.navbar.motors .navbar-nav .nav-item.show .nav-link:focus {
-  color: #ecdbff;
-  background-color: #bd0010; }
-
-.navbar.motors .navbar-toggle {
-  border-color: #bd0010; }
-
-.navbar.motors .navbar-toggle:hover,
-.navbar.motors .navbar-toggle:focus {
-  background-color: #bd0010; }
-
-.navbar.motors .navbar-toggle .navbar-toggler-icon {
-  color: #ecf0f1; }
-
-.navbar.motors .navbar-collapse,
-.navbar.motors .navbar-form {
-  border-color: #ecf0f1; }
-
-.navbar.motors .navbar-link {
-  color: #ecf0f1; }
-
-.navbar.motors .navbar-link:hover {
-  color: #ecdbff; }
-
-@media (max-width: 767px) {
-  .navbar.motors .navbar-nav .open .dropdown-menu .dropdown-item {
-    color: #ecf0f1; }
-  .navbar.motors .navbar-nav .open .dropdown-menu .dropdown-item:hover,
-  .navbar.motors .navbar-nav .open .dropdown-menu .dropdown-item:focus {
-    color: #ecdbff; }
-  .navbar.motors .navbar-nav .open .dropdown-menu .dropdown-item.active {
-    color: #ecdbff;
-    background-color: #bd0010; } }
-
-#motors-header nav {
-  background-color: #D0021B;
-  border-bottom: 1px solid #9c0315; }
-
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
-
-nav#topbar,
-nav#topbar .dropdown-menu {
-  background-color: #9F0619;
-  font-size: .7em;
-  color: white; }
-
-nav#topbar .dropdown-menu {
-  font-size: 1em; }
-
-nav#topbar .dropdown-menu a:active,
-nav#topbar .dropdown-menu a:hover,
-nav#topbar .dropdown-menu a:focus {
-  background-color: #772723; }
-
-nav a,
-nav a:hover,
-nav a:focus {
-  color: white; }
-
+/* Halaman Motors */
 section#ourcar,
 section#highlight {
   color: white;
-  background-color: #11141B; }
+  background-color: #282828; }
+
+.s-promo .bg-desc-promo {
+  background-color: #000000; }
 
 .informasi-produk {
   background-color: #D0021B;
@@ -502,7 +292,7 @@ section#beritaevents h2 {
   width: 100vw;
   margin-left: calc(-50vw + 50%); }
 
-/* SWIPER */
+/* Single Motors Page */
 .s-opsi-warna .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
@@ -594,106 +384,8 @@ section#beritaevents h2 {
   width: 6.25rem;
   height: 4.375rem; }
 
-#beritaevents .btn-primary {
-  background-color: #D0021B;
-  border-color: #D0021B; }
-
-#beritaevents .page-link {
-  color: #5a5a5a; }
-
-/* about us and footer */
-#aboutus {
-  font-size: .9rem; }
-
-footer {
-  font-size: .8rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: black;
-  color: white;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%); }
-
-footer a,
-footer a:hover,
-footer a:active {
-  color: #6D6D6D; }
-
-footer section {
-  margin-top: 0;
-  margin-bottom: 0; }
-
-footer section:first-of-type {
-  background-color: #1C1C1C;
-  padding-top: 60px;
-  padding-bottom: 60px; }
-
-footer section:last-of-type {
-  background-color: #282828;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-
-footer ul {
-  margin: 0;
-  padding: 0; }
-
-.flist {
-  list-style: none; }
-
-#fcars li {
-  float: left;
-  width: 50%; }
-
-@media (min-width: 992px) {
-  footer .row div:first-of-type {
-    text-align: left; }
-  footer .row div:last-of-type {
-    text-align: right; } }
-
-@media (max-width: 992px) {
-  footer .row div:first-of-type {
-    /*        margin-bottom: 40px;*/
-    text-align: center; }
-  footer .row div:last-of-type {
-    text-align: center;
-    /*        margin-bottom: 0;*/ } }
-
-@media (max-width: 576px) {
-  footer section:last-of-type .container .row div {
-    text-align: center; } }
-
-#aboutus {
-  background-color: #353535;
-  color: #999; }
-
-#aboutus h4 {
-  color: #e60012; }
-
-#aboutus a, aboutus a:visited, aboutus a:target {
-  color: #999; }
-
-section#aboutus ul li {
-  margin-bottom: 5px; }
-
-.medsos svg, #aboutus svg {
-  vertical-align: middle; }
-
-footer#main {
-  background-color: #282828;
-  color: #999; }
-
-footer#main a {
-  color: #999; }
-
-ul.footer-dealer-list li {
-  font-size: .9rem; }
-
 #spec .card h5 a {
   color: #D0021B; }
-
-@media (min-width: 768px) {
-  .col-md-5 {
-    padding-top: .5rem; } }
 
 /*
 FUSO COLOR SCHEME
@@ -722,3 +414,30 @@ FUSO COLOR SCHEME
 #artikel-terkait a.btn {
   background-color: #D0021B;
   border: 1px solid #D0021B; }
+
+/*
+<576px  
+≥576px  sm
+≥768px  md
+≥992px  lg
+≥1200px xl
+*/
+/* Media Query */
+@media (max-width: 992px) {
+  .logo-dipo {
+    margin-right: auto;
+    margin-left: auto; }
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .copyright div:first-of-type {
+    margin-right: 0 !important; } }
+
+@media (max-width: 768px) {
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .copyright div:first-of-type {
+    margin-right: 0 !important; } }

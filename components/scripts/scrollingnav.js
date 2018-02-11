@@ -1,5 +1,5 @@
 // Select all links with hashes
-$('a[href*="#"]')
+$('.navbar-nav li a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')

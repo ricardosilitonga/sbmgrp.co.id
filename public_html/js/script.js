@@ -201,25 +201,18 @@ var swiper8 = new Swiper('.s-fuso', {
 
 
 var swiper2 = new Swiper('.s-promo', {
-    slidesPerView: 2,
-    spaceBetween: 0,
-    slidesPerGroup: 2,
+
+slidesPerView: 1,
     autoplay: {
       delay: 5000,
     },
     // Responsive breakpoints
-    breakpoints: {
-        // when window width is <= 480px
-        720: {
-            slidesPerView: 1,
-            spaceBetween: 0
-        }
-    },
+
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
 });
 
@@ -322,12 +315,22 @@ var opsiWarna = new Swiper('.s-opsi-warna', {
 
 
 //---------------------------
-jQuery(function($) {
+$(document).ready(function() {
+  // if ($('#map_canvas').length) {
+  //   console.log("Maps");
+  // } else {
+  //   console.log("No Maps");
+  // }
+
+  if ($('#map_canvas').length) {
     // Asynchronously Load the map API
     var script = document.createElement('script');
     script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAF33SEqBrJJSqCSKSSERAUpswzMC665SE&sensor=false&callback=initialize";
     document.body.appendChild(script);
+  }
 });
+    
+
 
 function initialize() {
     var map;
@@ -525,7 +528,7 @@ function initialize() {
 
 //---------------------------
 // Select all links with hashes
-$('a[href*="#"]')
+$('.navbar-nav li a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')

@@ -80,25 +80,18 @@ var swiper8 = new Swiper('.s-fuso', {
 
 
 var swiper2 = new Swiper('.s-promo', {
-    slidesPerView: 2,
-    spaceBetween: 0,
-    slidesPerGroup: 2,
+
+slidesPerView: 1,
     autoplay: {
       delay: 5000,
     },
     // Responsive breakpoints
-    breakpoints: {
-        // when window width is <= 480px
-        720: {
-            slidesPerView: 1,
-            spaceBetween: 0
-        }
-    },
+
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
 });
 
