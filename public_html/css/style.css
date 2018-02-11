@@ -5,11 +5,8 @@ body {
 body {
   color: black; }
 
-header {
-  background-color: white; }
-
-.group-logo {
-  background-color: white; }
+#top {
+  background-color: #ffffff; }
 
 .navbar-light .navbar-nav .nav-link {
   color: white; }
@@ -34,8 +31,20 @@ header {
   text-decoration: none;
   background-color: #ab0715; }
 
+#mybreadcrumb {
+  text-align: center;
+  font-size: .8rem;
+  background-color: #e9ecef; }
+
+#mybreadcrum nav {
+  background-color: transparent; }
+
+#mybreadcrumb .breadcrumb {
+  padding: .55rem .5rem;
+  margin-bottom: 0; }
+
 .darkenBgImg {
-  background-color: rgba(0, 0, 0, 0.9); }
+  background-color: rgba(0, 0, 0, 0.6); }
 
 .bg-red {
   background-color: #e60012; }
@@ -223,6 +232,20 @@ section#about-dealer img {
 /* PAGE About Us */
 #company-profile .bg-text {
   background: #f1f1f1; }
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: white;
+  background-color: #e60012;
+  border-color: rgba(230, 0, 18, 0.6) rgba(230, 0, 18, 0.6) rgba(230, 0, 18, 0.6); }
+
+.nav-tabs {
+  border-bottom: 1px solid rgba(230, 0, 18, 0.6); }
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border-color: rgba(230, 0, 18, 0.6) rgba(230, 0, 18, 0.6) rgba(230, 0, 18, 0.6); }
+
+.nav-tabs a {
+  color: black; }
 
 /* Contact Us*/
 #contact-us .btn-primary {
