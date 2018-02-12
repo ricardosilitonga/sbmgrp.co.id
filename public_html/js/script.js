@@ -3,12 +3,52 @@
 //---------------------------
 
 (function() {
+
+  // Overlay fitur produk
+  $('.swiper-slide').hover(
+      function () {
+          $(this).find('.fitur-produk-overlay').show();
+
+
+          // Height of .swiper-slide in "rem"
+          var swiperSlideHeight = $(this).height() / 16;
+          //  Centering horizontally position
+          var axisYContainer = swiperSlideHeight / 2;
+
+
+
+
+          var text = $(this).find('.text-fitur-produk-overlay');
+          var textHeight = text.height() / 16;
+          var axisYText = textHeight / 2;
+
+
+          var centerHorizontally = axisYContainer - axisYText;
+
+          // console.log(containerHeight);
+          // console.log(axisYContainer);
+          // console.log(axisYText);
+
+          text.css('position', 'relative');
+          text.css('top', centerHorizontally + 'rem');
+
+
+      },
+      function () {
+          $(this).find('.fitur-produk-overlay').hide();
+      }
+  );
+
+
+
+
   var myNode = document.querySelector('.s-fitur-produk');
 
   if (myNode) {
       // console.log(myNode);
       myNode.addEventListener('click', function(e) {
-        if (e.target.tagName === 'svg') {
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'I') {
           var myOverlay = document.createElement('div');
           myOverlay.id = 'fullscreen-overlay';
           document.body.appendChild(myOverlay);
@@ -26,7 +66,6 @@
           myOverlay.style.top = window.pageYOffset + 'px';
           myOverlay.style.left = window.pageXOffset + 'px';
 
-          // console.log();
           //create image element
           var imgSrc = e.target.parentElement.parentElement.parentElement.getElementsByTagName('IMG')[0].src;
           var largeImage = document.createElement('img');
@@ -89,15 +128,7 @@
 //---------------------------
 $(document).ready(function () {
 
-    // Overlay fitur produk
-    $('.swiper-slide').hover(
-        function () {
-            $(this).find('.fitur-produk-overlay').show();
-        },
-        function () {
-            $(this).find('.fitur-produk-overlay').hide();
-        }
-    );
+    
 });
 
 
@@ -243,7 +274,7 @@ var swiper8 = new Swiper('.s-fitur-produk2', {
 
 
 
-var swiper5 = new Swiper('.s-fitur-produk', {
+var fiturProduk = new Swiper('.s-fitur-produk', {
   slidesPerView: 4,
   slidesPerColumn: 2,
   spaceBetween: 1,
@@ -511,44 +542,6 @@ function initialize() {
 
 
 //---------------------------
-//$(document).ready(function () {
-//    
-//    // Select all links with hashes
-//    $('.navbar-nav li a[href*="#"]')
-//        // Remove links that don't actually link to anything
-//        .not('[href="#"]')
-//        .not('[href="#0"]')
-//        .click(function (event) {
-//            // On-page links
-//            if (
-//                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-//                location.hostname == this.hostname
-//            ) {
-//                // Figure out element to scroll to
-//                var target = $(this.hash);
-//                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-//                // Does a scroll target exist?
-//                if (target.length) {
-//                    // Only prevent default if animation is actually gonna happen
-//                    event.preventDefault();
-//                    $('html, body').animate({
-//                        scrollTop: target.offset().top - topoffset
-//                    }, 1000, function () {
-//                        // Callback after animation
-//                        // Must change focus!
-//                        var $target = $(target);
-//                        $target.focus();
-//                        if ($target.is(":focus")) { // Checking if the target was focused
-//                            return false;
-//                        } else {
-//                            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-//                            $target.focus(); // Set focus again
-//                        };
-//                    });
-//                }
-//            }
-//        });
-//});
 $(function () {
     var header = $('#header');
     var paddingTop = header.outerHeight();
@@ -559,7 +552,6 @@ $(function () {
         paddingTop = paddingTop + paddingBreadcrumb;
     }
     $('body').css('padding-top', paddingTop);
-    console.log(paddingTop);
 
     $(function () {
         $('#header nav.navbar a[href*="#"]:not([href="#"])').click(function () {
@@ -588,7 +580,6 @@ $(function () {
             paddingTop = paddingTop + paddingBreadcrumb;
         }
         $('body').css('padding-top', paddingTop);
-        console.log(paddingTop);
     });
 
 });

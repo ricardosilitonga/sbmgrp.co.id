@@ -138,7 +138,7 @@ var swiper8 = new Swiper('.s-fitur-produk2', {
 
 
 
-var swiper5 = new Swiper('.s-fitur-produk', {
+var fiturProduk = new Swiper('.s-fitur-produk', {
   slidesPerView: 4,
   slidesPerColumn: 2,
   spaceBetween: 1,

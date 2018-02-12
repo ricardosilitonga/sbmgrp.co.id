@@ -1,11 +1,51 @@
 
 (function() {
+
+  // Overlay fitur produk
+  $('.swiper-slide').hover(
+      function () {
+          $(this).find('.fitur-produk-overlay').show();
+
+
+          // Height of .swiper-slide in "rem"
+          var swiperSlideHeight = $(this).height() / 16;
+          //  Centering horizontally position
+          var axisYContainer = swiperSlideHeight / 2;
+
+
+
+
+          var text = $(this).find('.text-fitur-produk-overlay');
+          var textHeight = text.height() / 16;
+          var axisYText = textHeight / 2;
+
+
+          var centerHorizontally = axisYContainer - axisYText;
+
+          // console.log(containerHeight);
+          // console.log(axisYContainer);
+          // console.log(axisYText);
+
+          text.css('position', 'relative');
+          text.css('top', centerHorizontally + 'rem');
+
+
+      },
+      function () {
+          $(this).find('.fitur-produk-overlay').hide();
+      }
+  );
+
+
+
+
   var myNode = document.querySelector('.s-fitur-produk');
 
   if (myNode) {
       // console.log(myNode);
       myNode.addEventListener('click', function(e) {
-        if (e.target.tagName === 'svg') {
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'I') {
           var myOverlay = document.createElement('div');
           myOverlay.id = 'fullscreen-overlay';
           document.body.appendChild(myOverlay);
@@ -23,7 +63,6 @@
           myOverlay.style.top = window.pageYOffset + 'px';
           myOverlay.style.left = window.pageXOffset + 'px';
 
-          // console.log();
           //create image element
           var imgSrc = e.target.parentElement.parentElement.parentElement.getElementsByTagName('IMG')[0].src;
           var largeImage = document.createElement('img');
